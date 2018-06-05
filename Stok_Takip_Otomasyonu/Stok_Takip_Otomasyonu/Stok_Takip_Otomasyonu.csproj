@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86AC1174-AECE-45DB-A501-DBAEB201459B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Stok_Takip_Otomasyonu</RootNamespace>
+    <AssemblyName>Stok_Takip_Otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalisanBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalisanBilgi.Designer.cs">
+      <DependentUpon>CalisanBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="islemPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="islemPaneli.Designer.cs">
+      <DependentUpon>islemPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KontrolPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KontrolPaneli.Designer.cs">
+      <DependentUpon>KontrolPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici.Designer.cs">
+      <DependentUpon>Kullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciBildirim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciBildirim.Designer.cs">
+      <DependentUpon>KullaniciBildirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciBilgi.Designer.cs">
+      <DependentUpon>KullaniciBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciPaneli.Designer.cs">
+      <DependentUpon>KullaniciPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Siparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparisler.Designer.cs">
+      <DependentUpon>Siparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokVeriDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokVeriDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokVeriDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokVeriDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokVeriDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokVeriDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokVeriDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokVeriDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokVeriDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokVeriDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokVeriDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokVeriDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UrunDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunDuzenle.Designer.cs">
+      <DependentUpon>UrunDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yardim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yardim.Designer.cs">
+      <DependentUpon>Yardim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yonetici.Designer.cs">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiBildirim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiBildirim.Designer.cs">
+      <DependentUpon>YoneticiBildirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiBilgi.Designer.cs">
+      <DependentUpon>YoneticiBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiPaneli.Designer.cs">
+      <DependentUpon>YoneticiPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonlendirMudur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YonlendirMudur.Designer.cs">
+      <DependentUpon>YonlendirMudur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YonlendirUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YonlendirUser.Designer.cs">
+      <DependentUpon>YonlendirUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalisanBilgi.resx">
+      <DependentUpon>CalisanBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="islemPaneli.resx">
+      <DependentUpon>islemPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KontrolPaneli.resx">
+      <DependentUpon>KontrolPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici.resx">
+      <DependentUpon>Kullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciBildirim.resx">
+      <DependentUpon>KullaniciBildirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciBilgi.resx">
+      <DependentUpon>KullaniciBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciPaneli.resx">
+      <DependentUpon>KullaniciPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Siparisler.resx">
+      <DependentUpon>Siparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunDuzenle.resx">
+      <DependentUpon>UrunDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yardim.resx">
+      <DependentUpon>Yardim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yonetici.resx">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiBildirim.resx">
+      <DependentUpon>YoneticiBildirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiBilgi.resx">
+      <DependentUpon>YoneticiBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiPaneli.resx">
+      <DependentUpon>YoneticiPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonlendirMudur.resx">
+      <DependentUpon>YonlendirMudur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonlendirUser.resx">
+      <DependentUpon>YonlendirUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StokVeriDataSet.xsc">
+      <DependentUpon>StokVeriDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokVeriDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokVeriDataSet.xss">
+      <DependentUpon>StokVeriDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet1.xsc">
+      <DependentUpon>StokVeriDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokVeriDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokVeriDataSet1.xss">
+      <DependentUpon>StokVeriDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet2.xsc">
+      <DependentUpon>StokVeriDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokVeriDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokVeriDataSet2.xss">
+      <DependentUpon>StokVeriDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet3.xsc">
+      <DependentUpon>StokVeriDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokVeriDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokVeriDataSet3.xss">
+      <DependentUpon>StokVeriDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet4.xsc">
+      <DependentUpon>StokVeriDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokVeriDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokVeriDataSet4.xss">
+      <DependentUpon>StokVeriDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet5.xsc">
+      <DependentUpon>StokVeriDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="StokVeriDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokVeriDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokVeriDataSet5.xss">
+      <DependentUpon>StokVeriDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor-160942_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460923275_administrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1460923265_User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri-buton.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16762-illustration-of-a-clock-pv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74472.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Messaging-Message-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit-validated-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\077427-black-inlay-crystal-clear-bubble-icon-business-trashcan3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-downloadfiles-wallpapers-1920_1200_widescreen-apple_keyboard_wallpaper_apple_computers_wallpaper_1920_1200_widescreen_2714.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\symbol_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit-validated-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3fb7138447319ae92edb05df91e70360-users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\todo_list-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery_food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\077427-black-inlay-crystal-clear-bubble-icon-business-trashcan31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sending_e-mail_envelope_marketing-512.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

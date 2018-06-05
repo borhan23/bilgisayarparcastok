@@ -1,0 +1,8 @@
+Stok No girilirken dikkat edilmesi gerekenler;
+-Girmiş olduğunuz marka isminin 1. harfi stok nonun ilk karakteridir.
+-Girmiş olduğunuz şehir isminin 1. ve 2. harfi stok nonun 2. ve 3. karakteridir.
+
+Örneğin;
+Marka:Asus
+Şehir:ELAZIĞ
+Stok No:AEL...
